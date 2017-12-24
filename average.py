@@ -24,15 +24,15 @@ average(10, 100020)
 # Если в списке не четное количество элементов? найти число которое находится по средине
 # если четное количество элементов находим среднее между двумя четными числами
 
-# def median(lst):
-#     lst = sorted(lst)
-#
-#     if len(lst) % 2 == 0:
-#         even = (lst[int(len(lst) / 2)] + lst[int(len(lst) / 2) - 1]) / 2.0
-#         return even
-#
-#     else:
-#         uneven = lst[int(len(lst) / 2)]
-#         return uneven
-#
-# median([1, 7, 3, 6, 8])
+def median(lst):
+    lst = sorted(lst)
+
+    if len(lst) % 2 == 0:
+        even = (lst[int(len(lst) / 2)] + lst[int(len(lst) / 2) - 1]) / 2.0
+        return even
+
+    else:
+        uneven = lst[int(len(lst) / 2)]
+        return uneven
+
+median([1, 7, 3, 6, 8])
